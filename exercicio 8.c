@@ -1,27 +1,35 @@
 #include <stdio.h>
-#include <math.h>
-    int main(void){
-        float nota1,nota2;
 
-        printf("Digite nota nota 1 :");
-        scanf("%f",&nota1);
+int main(){
 
-        printf("Digite note note 2 :");
-        scanf("%f",&nota2);
+int num = 0;
+int contador = 0;
+int numMaior = 0;
+int numMenor = 0;
 
-        if ((nota1 <= 0.0 || nota1 >= 10.0) || (nota2 <= 0.0 || nota2 >= 10.0 ))
-        {
-            
-             printf("Finalizar Programa");
-        }
+while ( contador < 10){
+    printf("Digite um numero: ");
+    scanf("%d",&num);
 
-        else{
+    if(contador == 0){
 
-            float media = (nota1 + nota2)/2;
-
-        printf("Media da prova é : %0.2f + %0.2f = %0.2f", nota1,nota2,media);
-            
-        }
-
-        return 0;
+        numMaior = num;
+        numMenor = num;
     }
+
+    if (num > numMaior){
+
+        numMaior = num;
+    }
+    if (num < numMenor){
+
+        numMenor = num;
+    }
+    contador++;
+}
+
+    printf("O numero maior é: %d\n",numMaior);
+    printf("O numero menor é: %d",numMenor);
+return 0;
+
+}

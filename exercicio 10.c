@@ -1,27 +1,17 @@
 #include <stdio.h>
-#include <math.h>
-    int main(void){
+    int main(){
 
-        float altura, peso;
-        int sexo;
+        int count = 0;
 
-        printf("Digite a Altura :");
-        scanf("%f",&altura);
+        while (count < 50)
+        {
+            if( count %2 == 0){
 
-        printf("Digite o seu peso :");
-        scanf("%f",&peso);
-
-        printf("Digite o Sexo : 1 para masculino e 2 para feminino :");
-        scanf("%d",&sexo);
-        
-        if (sexo == 1){
-            float pesoIdeal = (peso * altura) - 58;
-            printf("O seu peso ideal é : %0.2f",pesoIdeal);
-        }
-        else if (sexo == 2){
-            float pesoIdeal = (peso * altura) - 44.7;
-            printf("O seu peso ideal é : %0.2f",pesoIdeal);
+                printf("%d\n",count);
+            }
+        count++;
         }
         
+
         return 0;
     }

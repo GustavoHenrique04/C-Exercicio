@@ -1,24 +1,13 @@
 #include <stdio.h>
-int main(void)
+int main(){
+    int contador = 0;
 
-{
-  int dia;
-  int diaMes;
-  int Ano;
+        for ( int num = 1; num < 5; num++){
 
-  printf("Qual o dia do seu aniversario?\n");
-  scanf(" %d" ,&dia);
+            contador = contador + 3;
+            
+        printf("Os numeros são: %d\n",contador);
+}
 
-  printf("Qual o dia do mês do seu aniversario?\n");
-  scanf(" %d" ,&diaMes);
-
-  printf("Qual o Ano que você nasceu?\n");
-  scanf("%d", &Ano);
-
-  int idade= 2022-Ano;
-  
-  printf("%d/%d/%d.\nVocê tem %d Anos", dia, diaMes,Ano,idade);
-
- 
-  }
-  
+return 0;
+}

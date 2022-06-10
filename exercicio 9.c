@@ -1,26 +1,20 @@
 #include <stdio.h>
-#include <math.h>
- int main(void){
-     
-     float salario,emprestimo;
+    int main(){
+        int num = 0, count = 0;
 
-    printf("Digite o salario :$");
-    scanf("%f",&salario);
+        printf("Digite um numero: ");
+        scanf("%d",&num);
 
-    printf("Digite o emprestimo :$");
-    scanf("%f",&emprestimo);
+        while (count < num ){
+            
+            if (count %2 != 0){
+                
+                printf("%d\n",count);
+            }
 
-    float comparacao = salario * 1.02;
-    float prestacao = comparacao + emprestimo;
-
-    if (emprestimo > salario)
-    {
-        printf("Emprestimo não concedido.");
+            count++;
+        }
+        
+        
+        return 0;
     }
-    else{
-        printf("Emprestimo concedido.");
-    }
-    
-
-     return 0;
- }

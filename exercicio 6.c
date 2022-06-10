@@ -1,25 +1,23 @@
 #include <stdio.h>
-#include <math.h>
-    int main(){
+    
+int main(){
 
-        int num1;
-        int num2;
+    int num = 0;
+    int contador = 0;
+    int soma = 0;
 
-        printf("Digite o primeiro valor :");
-        scanf("%d",&num1);
+    while (contador < 10 )
+    {
+        printf("Digite um valor: ");
+        scanf("%d",&num);
 
-        printf("Digite o segundo valor :");
-        scanf("%d",&num2);
+        soma = soma + num;
 
-        if ( num1 > num2){
-            int subtracao = num1 - num2;
+        contador++;
 
-            printf("%d - %d = %d", num1,num2,subtracao);
-        }
-        else{
-            int subtracao = num2 - num1;
-
-            printf("%d - %d = %d", num2,num1,subtracao);
-        }
-        return 0;
     }
+    
+        printf("O resultado é: %d", soma / 10);
+
+    return 0;
+}

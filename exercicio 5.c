@@ -1,19 +1,22 @@
 #include <stdio.h>
-#include <math.h>
+  
+int main(){
 
-    int main(){
-        int num;
+  int num = 0;
+  int contador = 1;
+  int soma = 0;
 
-        printf("Digite um numero inteiro :");
-        scanf("%d",&num);
+    while (contador < 10){
 
-        if ((num % 2 )== 0){
+    printf("Digite um valor: ");
+    scanf("%d",&num);
+    
+      soma = soma + num;
+  
+    contador++;
+}
 
-            printf("Numero é par : %d", num);
+  printf("O resultado é: %d",soma);
 
-        }
-        else{
-            printf("Numero é ímpar : %d", num);
-        }
-        return 0;
-    }
+return 0;
+}

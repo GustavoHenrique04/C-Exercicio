@@ -1,23 +1,15 @@
 #include <stdio.h>
-#include <math.h>
-    int main(){
+int main(){
 
-        float num;
-        printf("Digite um numero :");
-        scanf("%f",&num);
+    int n = 0;
+    int contador = 0;
 
-        if ( num > 0){
+        while (n < 100000){
+            n = n + 1000;
+        printf("%d\n",n);
 
-            float potencia = pow(num,2);
-            float raiz = sqrt(potencia);
+        contador++;
+}
 
-            printf("%0.2f ^ 2 = %0.2f\n", num, potencia);
-            printf("√ %0.2f = %0.2f ", potencia , raiz);
-
-        }
-        else{
-            printf("Numero é negativo");
-        }
-
-        return 0;
-    }
+return 0;
+}
